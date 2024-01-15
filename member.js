@@ -1,0 +1,35 @@
+function skillsMember() {
+    var skills = document.getElementById("skills");
+    var skillsMember = document.getElementById("skillsMember");
+    var skillsMemberValue = skillsMember.options[skillsMember.selectedIndex].value;
+    var skillsMemberText = skillsMember.options[skillsMember.selectedIndex].text;
+    var skillsMemberTextLength = skillsMemberText.length;
+    var skillsMemberTextLength = skillsMemberTextLength - 1;
+    var skillsMemberText = skillsMemberText.substr(0, skillsMemberTextLength);
+    var skillsMemberText = skillsMemberText.replace(/ /g, "_");
+    var skillsMemberText = skillsMemberText.toLowerCase();
+    var skillsMemberText = skillsMemberText.replace(/'/g, "");
+    var skillsMemberText = skillsMemberText.replace(/,/g, "");
+    var skillsMemberText = skillsMemberText.replace(/&/g, "");
+    var skillsMemberText = skillsMemberText.replace(/:/g, "");
+    var skillsMemberText = skillsMemberText.replace(/;/g, "");
+    var skillsMemberText = skillsMemberText.replace(/!/g, "");
+    var skillsMemberText = skillsMemberText.replace(/-/g, "");
+    var skillsMemberText = skillsMemberText.replace(/\./g, "");
+    var skillsMemberText = skillsMemberText.replace(/\(/g, "");
+    var skillsMemberText = skillsMemberText.replace(/\)/g, "");
+    var skillsMemberText = skillsMemberText.replace(/\//g, "");
+    var skillsMemberText = skillsMemberText.replace(/\\/g, "");
+    var skillsMemberText = skillsMemberText.replace(/#/g, "");
+    var skillsMemberText = skillsMemberText.replace(/@/g, "");
+    var skillsMemberText = skillsMemberText.replace(/%/g, "");
+    var skillsMemberText = skillsMemberText.replace(/\+/g, "");
+    var skillsMemberText = skillsMemberText.replace(/\*/g, "");
+    var skillsMemberText = skillsMemberText.replace(/\$/g, "");
+    var skillsMemberText = skillsMemberText.replace(/\^/g, "");
+    var skillsMemberText = skillsMemberText.replace(/\|/g, "");
+    var skillsMemberText = skillsMemberText.replace(/</g, "");
+    var skillsMemberText = skillsMemberText.replace(/>/g, "");
+    var skillsMemberText = skillsMemberText.replace(/=/g, "");
+    var skillsMemberText = skillsMemberText.replace(/`/g, "");
+    var skillsMemberText = skillsMember
